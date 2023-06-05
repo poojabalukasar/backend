@@ -1,16 +1,21 @@
-
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "backend/server.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "backend/server.js"
-      }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "shop/backend/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "shop/backend/server.js"
+    }
+  ],
+  "projectSettings": {
+    "framework": {
+      "defaultBuildScript": "npm run build",
+      "buildCommand": "cd shop && npm install && npm run build"
+    }
   }
+}
