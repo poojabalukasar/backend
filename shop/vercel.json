@@ -11,11 +11,5 @@
       "src": "/(.*)",
       "dest": "shop/backend/server.js"
     }
-  ],
-  "projectSettings": {
-    "framework": {
-      "defaultBuildScript": "npm run build",
-      "buildCommand": "cd shop && npm install && npm run build"
-    }
-  }
-}
+  ]
+ }
